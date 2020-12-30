@@ -4,5 +4,4 @@
 (in-package :cl-bowling)
 
 (defun bowling (rolls)
-  (let ((plus #'+))
-  (reduce plus rolls :initial-value 0)))
+  (reduce #'+ rolls :initial-value 0))
