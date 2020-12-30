@@ -1,5 +1,8 @@
 (defpackage cl-bowling
-  (:use :cl))
+  (:use :cl)
+  (:export :bowling))
 (in-package :cl-bowling)
 
-;; blah blah blah.
+(defun bowling (rolls)
+  (let ((plus #'+))
+  (reduce plus rolls :initial-value 0)))

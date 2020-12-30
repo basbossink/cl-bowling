@@ -4,8 +4,8 @@
         :rove))
 (in-package :cl-bowling/tests/main)
 
-;; NOTE: To run this test file, execute `(asdf:test-system :cl-bowling)' in your Lisp.
-
-(deftest test-target-1
-  (testing "should (= 1 1) to be true"
-    (ok (= 1 1))))
+(deftest bowling-tests
+  (testing "gutter game should score 0"
+    (ok (= 0 (bowling (make-list 20 :initial-element 0)))))
+  (testing "ones game should score 20"
+    (ok (= 20 (bowling (make-list 20 :initial-element 1))))))

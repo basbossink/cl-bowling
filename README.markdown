@@ -1,5 +1,0 @@
-# Cl-Bowling
-
-## Usage
-
-## Installation
